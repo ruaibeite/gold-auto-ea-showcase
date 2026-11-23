@@ -1,15 +1,21 @@
-# GoldAutoEA · XAUUSD M15 多因子策略
+# GoldAutoEA｜MT5 黄金 EA（XAUUSD M15）策略与回测
+
+GoldAutoEA 是一套运行在 **MetaTrader 5（MT5）** 上的 **XAUUSD 黄金自动交易 EA（Expert Advisor）**，面向 15 分钟周期（M15）。策略结合趋势、动量、均值回归和突破四个因子，并使用 ATR 止损和账户级风控。本仓库公开策略框架、MT5 策略测试器回测、模拟盘记录和版本更新。
+
+**English overview** · GoldAutoEA is a MetaTrader 5 Expert Advisor for XAUUSD (gold) on the M15 timeframe. This showcase covers the multi-factor trading strategy, ATR-based risk controls, MT5 backtest results, and demo-account records. The MQL5 source and preset files are available under license.
+
+- [策略原理](#这是什么)
+- [回测结果](#回测结果)
+- [授权与购买](#授权与购买)
 
 > **源码私有**：完整 EA 源码（`.mq5` / `.mqh`）与参数文件**不公开**，授权后提供。
 > 本仓库仅用于展示策略逻辑、回测结果与版本记录。
 
-![回测结果](assets/backtest.png)
+![GoldAutoEA 在 MT5 策略测试器中的 XAUUSD M15 回测结果](assets/backtest.png)
 
 ---
 
 ## 这是什么
-
-GoldAutoEA 是一套面向 **XAUUSD（黄金）M15** 的量化交易策略，运行在 **MetaTrader 5** 上。
 
 核心是一套 **四因子综合评分** 模型，用同一套分数同时决定「开不开仓、开哪个方向、什么时候走」：
 
